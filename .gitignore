@@ -1,0 +1,7 @@
+# Ignore environment files with secrets
+
+backend/.env
+# Ignore Product Requirements Document
+PRD.md
+.env
+
