@@ -397,4 +397,4 @@ The same metadata is included in the text used for embeddings, which improves se
 
 ## License
 
-MIT (or specify your license here).
+MIT 
