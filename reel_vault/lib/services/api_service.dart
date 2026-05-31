@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 
 /// API Service for communicating with the ReelCall backend
 class ApiService {
-  // Using ngrok tunnel for testing (works from anywhere!)
-  static const String baseUrl = 'https://unrefining-talisha-preluxuriously.ngrok-free.dev';
+  // ngrok tunnel — run: ngrok http 8000, then paste your HTTPS URL below
+  static const String baseUrl = 'https://molehill-floral-lethargy.ngrok-free.dev';
   
   /// Process an Instagram reel URL
   /// Returns the processed data including transcript, summary, tags, and category
