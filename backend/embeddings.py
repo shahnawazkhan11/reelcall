@@ -14,8 +14,8 @@ HF_API_KEY = os.getenv("HF_API_KEY")
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 EMBEDDING_DIMENSION = 384  # Dimension for all-MiniLM-L6-v2
 
-# Updated HuggingFace API URL (they changed from api-inference to router)
-HF_API_URL = f"https://router.huggingface.co/hf-inference/pipeline/feature-extraction/{EMBEDDING_MODEL}"
+# HuggingFace router API — must include /models/ in the path
+HF_API_URL = f"https://router.huggingface.co/hf-inference/models/{EMBEDDING_MODEL}/pipeline/feature-extraction"
 
 
 def get_embedding(text: str) -> Optional[List[float]]:
